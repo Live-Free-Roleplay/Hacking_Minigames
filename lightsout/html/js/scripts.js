@@ -111,10 +111,10 @@ function moveHandler(elem) {if (canClick) {
   canClick = false;
   clicks++;
   lightsOut.move(...elem.id.split("-").map(Number));
-  onClickAudio.play();
+  //onClickAudio.play();
   if (lightsOut.isComplete()) {
     setTimeout(() => {
-      successAudio.play();
+      //successAudio.play();
       let on = document.getElementById("lights-out");
       on.innerHTML = ""
       on.innerHTML = '<i class="fa-solid fa-database" style="transform: translate(11.25vh, -3.1vh);padding-top: 4vh;padding-bottom: 1vh;font-size: 42px;"></i><span style="margin-top: 10vh;margin-right: 5vh;z-index: 4;transform: translate(0.6vh, -2vh);">Database Recovery Success.</span>'
